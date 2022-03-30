@@ -1,0 +1,83 @@
+.certificates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin: auto;
+}
+
+.list-certificates {
+  margin: 15px;
+}
+
+.list-certificates article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+  border: 5px;
+}
+
+.list-certificates strong {
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+
+.list-certificates img {
+  max-height: 350px;
+}
+
+@media screen and (max-width: 640px) {
+  .list-certificates img {
+    width: 250px;
+  }
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Style Loading */
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.load .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+  display: inline-block;
+  background-color: #fff;
+  transform: scale(0.2);
+  animation: animacao 1.2s infinite;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.dot:nth-child(4) {
+  animation-delay: 0.7s;
+}
+.dot:nth-child(5) {
+  animation-delay: 1s;
+}
+.dot:nth-child(6) {
+  animation-delay: 1.2s;
+}
+@keyframes animacao {
+  0%,
+  100% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

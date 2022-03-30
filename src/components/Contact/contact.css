@@ -1,0 +1,88 @@
+.contact {
+  width: 80vw;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact h4 {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.contact input,
+textarea {
+  width: 50%;
+  margin: 1rem;
+  outline: 0;
+  border: 0;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #0c1821;
+  caret-color: gray;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+.contact textarea {
+  height: 115px;
+  resize: none;
+}
+
+.contact button {
+  margin-top: 1rem;
+  width: 50%;
+  background: transparent;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid #fff;
+}
+
+.contact button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 640px) {
+  .contact input,
+  textarea {
+    width: 90%;
+  }
+}
+
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  border: 3px solid #dddf00;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: #fcab41;
+    border-bottom-color: #80ffdb;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

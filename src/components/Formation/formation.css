@@ -1,0 +1,47 @@
+.formation {
+  margin-top: 4rem;
+  width: 70vw;
+  margin-bottom: 2rem;
+}
+
+.formation span,
+strong {
+  color: #ffffff;
+  text-align: center;
+}
+
+.formation h4 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.groupFormation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 640px) {
+  .formation {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+
+  .groupFormation {
+    margin-bottom: 2rem;
+  }
+
+  .groupFormation h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .groupFormation strong {
+    text-align: center;
+  }
+}
