@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import profile from '../../assets/bruno.png'
+import profile from '../../assets/Bruno.png';
 
 export default function About() {
   return (    
