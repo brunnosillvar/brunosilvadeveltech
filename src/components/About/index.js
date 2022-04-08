@@ -2,12 +2,13 @@ import React from 'react';
 import './about.css';
 import profile from '../../assets/Bruno.png';
 
-export default function About() {
-  return (    
+export default function About() {  
+  return (        
     <div className="about" id="aboutUs">
       <div className="sobreFoto">
         <span className=""><img src={profile} alt="profile"/></span>
-      </div>
+      </div>      
+
       <div className="sobreTexto">
         <h3>Sobre Mim</h3>
         <p className="paragrafo1">

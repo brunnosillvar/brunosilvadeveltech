@@ -7,8 +7,7 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }){
-  const {signed, loading} = useContext(AuthContext);  
-  console.log('break 2')
+  const {signed, loading} = useContext(AuthContext);    
   if(loading){
     return(
       <div></div>

@@ -43,5 +43,28 @@ strong {
 
   .groupFormation strong {
     text-align: center;
+  }  
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.slideanim {
+  visibility:hidden;
+}
+
+.slide {
+    animation-name: slide;    
+    animation-duration: 2s;    
+    visibility: visible;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }

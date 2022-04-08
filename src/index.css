@@ -21,6 +21,7 @@ body,
 body {
   font: 14px "Roboto", sans-serif;
   background-color: #0c1821;
+  overflow-x: hidden; 
 }
 
 a {

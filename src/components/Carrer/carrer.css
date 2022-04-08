@@ -34,7 +34,7 @@ ul.timeline:before {
   left: 29px;
   width: 2px;
   height: 100%;
-  z-index: 400;
+  /* z-index: 400; */
   margin-right: 2rem;
 }
 
@@ -80,4 +80,25 @@ ul.timeline > li:before {
     font-size: 1rem;
     color: #fff;
   }
+
+  .box {
+    transform: translateX(0);
+  }
 }
+
+@media screen and (min-width: 800px){
+  .box {       
+    transform: translateX(400%);  
+    transition: transform 0.4s ease;  
+   }  
+   /* .box:nth-of-type(even) {  
+    transform: translateX(-400%);  
+   }   */
+   .box.show {  
+    transform: translateX(0);  
+   } 
+}
+
+/* --------------------------------------------------------------------------- */
+
+
