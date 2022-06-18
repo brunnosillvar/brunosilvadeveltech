@@ -36,6 +36,11 @@ export default function Carrer() {
   return (    
     <div className="carrer" id="carrer">
       <ul className="timeline">
+      <li className='box'>
+          <h4>Front-End Software Engineer - abr. de 2022 até o momento</h4>
+          <p><strong>Inteli - Instituto de Tecnologia e Liderança</strong></p>
+          <p className="paragrafo1">Desenvolvimento front-end com ReactJs, arquitetura da informação, planejamento e organização de projetos e prototipação de interfaces com Figma.</p>
+        </li>
         <li className='box'>
           <h4>Desenvolvedor Front-End - ago. de 2021 até fev. de 2022</h4>
           <p><strong>Ally Hub</strong></p>
